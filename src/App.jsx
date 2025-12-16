@@ -7,7 +7,7 @@ export default function App() {
       <div className="app-glow" aria-hidden />
       <div className="content">
         <header className="app-header">
-          <p className="eyebrow">Connect Four</p>
+          <p className="eyebrow">adar test</p>
           <h1>Board refreshed with clean, modern lines</h1>
           <p className="subtitle">text</p>
         </header>
