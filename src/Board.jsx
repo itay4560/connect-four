@@ -1,3 +1,5 @@
+import "./Board.css";
+
 export default function Board() {
   const rows = 6;
   const cols = 7;
@@ -8,27 +10,19 @@ export default function Board() {
   }
 
   return (
-    <div style={{ border: "6px solid black", padding: 50 }}>
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: `repeat(${cols}, 1fr)`,
-          gap: 20,
-          width: 800,
-        }}
-      >
-        {cells.map((cell) => (
-          <div
-            key={cell}
-            style={{
-              width: 60,
-              height: 50,
-              borderRadius: "50%",
-              border: "1px solid black",
-            }}
-          />
-        ))}
+    <div className="board-card">
+      <div className="board-top-bar">
+        <span className="title">Gravity Grid</span>
+        <span className="pill">Ready to drop</span>
       </div>
+      <div className="board-frame">
+        <div className="board-grid">
+          {cells.map((cell) => (
+            <div key={cell} className="board-cell" />
+          ))}
+        </div>
+      </div>
+      <div className="board-base" />
     </div>
   );
 }
