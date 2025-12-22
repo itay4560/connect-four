@@ -5,6 +5,7 @@
   padding: 16px;
   background: #0a2a66;
   border-radius: 12px;
+  display: inline-block;
 }
 
 .row {
