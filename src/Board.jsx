@@ -1,27 +1,6 @@
-import { useState } from "react";
 import "./Board.css";
 
-const ROWS = 6;
-const COLS = 7;
-
-export default function Board() {
-  const [grid, setGrid] = useState(
-    Array.from({ length: ROWS }, () => Array(COLS).fill(null))
-  );
-  const [current, setCurrent] = useState("R");
-
-  const drop = (col) => {
-    const next = grid.map((row) => [...row]);
-    for (let r = ROWS - 1; r >= 0; r -= 1) {
-      if (!next[r][col]) {
-        next[r][col] = current;
-        setGrid(next);
-        setCurrent(current === "R" ? "Y" : "R");
-        break;
-      }
-    }
-  };
-
+export default function Board({ grid, onDrop }) {
   return (
     <div className="board">
       {grid.map((row, r) => (
@@ -30,7 +9,7 @@ export default function Board() {
             <button
               key={c}
               className="cell"
-              onClick={() => drop(c)}
+              onClick={() => onDrop(c)}
               aria-label={`column ${c + 1}`}
             >
               <span
@@ -42,7 +21,6 @@ export default function Board() {
           ))}
         </div>
       ))}
-      <div className="status">תור של {current === "R" ? "אדום" : "צהוב"}</div>
     </div>
   );
 }
