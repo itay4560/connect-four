@@ -12,6 +12,13 @@
   display: flex;
   gap: 8px;
 }
+.disc.win {
+  outline: 4px solid #ffffff;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.25),
+    0 0 18px rgba(255, 255, 255, 0.6);
+  transform: scale(1.03);
+}
 
 .cell {
   width: 56px;
