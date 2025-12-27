@@ -1,0 +1,28 @@
+.start-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+}
+
+.description {
+  margin: 0;
+  font-size: 16px;
+  color: #444;
+}
+
+.start-btn {
+  margin-top: 8px;
+  padding: 10px 22px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  background: #111827;
+  color: #ffffff;
+}
+
+.start-btn:hover {
+  opacity: 0.9;
+}

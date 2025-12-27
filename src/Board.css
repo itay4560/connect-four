@@ -12,6 +12,13 @@
   display: flex;
   gap: 8px;
 }
+.disc.win {
+  outline: 4px solid #ffffff;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.25),
+    0 0 18px rgba(255, 255, 255, 0.6);
+  transform: scale(1.03);
+}
 
 .cell {
   width: 56px;
@@ -45,4 +52,23 @@
   color: #fff;
   font-weight: 600;
   text-align: center;
+}
+
+@keyframes disc-drop {
+  0% {
+    transform: translateY(-260%);
+  }
+  80% {
+    transform: translateY(0%);
+  }
+  90% {
+    transform: translateY(-8%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.disc.dropped {
+  animation: disc-drop 0.9s ease-out;
 }
