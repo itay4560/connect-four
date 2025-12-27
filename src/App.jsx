@@ -18,7 +18,7 @@ export default function App() {
   return (
     <div className="app-shell">
       <h1 className="title">ארבע בשורה</h1>
-      <p className="subtitle">משחק לשני שחקנים.</p>
+      <p className="subtitle">משחק לשני שחקנים</p>
 
       {!started ? (
         <StartScreen onStart={handleStart} />
