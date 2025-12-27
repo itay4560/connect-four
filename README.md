@@ -8,7 +8,7 @@
 ## 🖼️ תצוגת משחק
 *(התמונה מצורפת מתוך הקובץ image.png – ניתן להוסיף תמונות נוספות בהמשך)*
 
-<img src="https://raw.githubusercontent.com/itay4560/connect-four/main/image.png" width="650" />
+<img src="image.png" />
 
 ---
 
