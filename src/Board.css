@@ -53,3 +53,22 @@
   font-weight: 600;
   text-align: center;
 }
+
+@keyframes disc-drop {
+  0% {
+    transform: translateY(-260%);
+  }
+  80% {
+    transform: translateY(0%);
+  }
+  90% {
+    transform: translateY(-8%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.disc.dropped {
+  animation: disc-drop 0.9s ease-out;
+}
