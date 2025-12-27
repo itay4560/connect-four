@@ -1,16 +1,29 @@
-# React + Vite
+# 🎮 משחק ארבע בשורה – Connect Four (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+משחק אינטראקטיבי של ארבע בשורה, בנוי בטכנולוגיות מודרניות – React + Vite.  
+המשחק מאפשר לשני שחקנים להתחרות זה בזה בזמן אמת, כולל טיימרים, רמזים, ביטול מהלך ואפקטים גרפיים.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🖼️ תצוגת משחק
+*(התמונה מצורפת מתוך הקובץ image.png – ניתן להוסיף תמונות נוספות בהמשך)*
 
-## React Compiler
+<img src="https://raw.githubusercontent.com/itay4560/connect-four/main/image.png" width="650" />
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ פיצ'רים 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| יכולת | תיאור |
+|-------|--------|
+| 🟡 מערכת תורות דינמית | תור עובר בין אדום לצהוב בזמן אמת |
+| ⏱ טיימר לכל שחקן | כל שחקן מקבל זמן מוגבל לבצע מהלך; אם הזמן נגמר – התור עובר |
+| 🎯 זיהוי ניצחון חכם | בדיקה בכל ציר (אופקי / אנכי / אלכסוני) |
+| 🖍️ סימון גרפי לניצחון | כאשר יש ניצחון – ארבעת המטבעות המנצחים מסומנים באופן בולט וברור |
+| 🎬 אנימציה להפלת מטבע | מטבע "נופל" מגובה אל התא המדויק – מוסיף תחושה של משחק אמיתי |
+| ♻️ כפתור ביטול מהלך (Undo) | מאפשר לחזור למהלך הקודם במידה והחוקים מאפשרים זאת |
+| 🔄 כפתור התחלה מחדש (Restart) | איפוס המשחק לחלוטין ותחילת משחק חדש בכל רגע |
+| 🧠 כפתור רמז | מסמן לשחקן אם קיימת אפשרות לניצחון בתור הקרוב |
+| 👁️ תצוגת מצב שוטף | הצגת הזמן שנותר, תור נוכחי, מצב המשחק וניצחון |
+
+---
