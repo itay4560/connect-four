@@ -45,7 +45,7 @@
 .hint-text {
   margin-top: 4px;
   font-size: 14px;
-  color: #374151;
+  color: #37445a;
 }
 
 .hint-btn {
@@ -60,4 +60,11 @@
 
 .hint-btn:hover {
   background: #dbeafe;
+}
+
+.created-by {
+  font-family: "Pacifico", cursive; /* או כל גופן שבחרת */
+  font-size: 14px;
+  text-align: center;
+  margin-top: 8px;
 }

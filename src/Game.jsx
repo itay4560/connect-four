@@ -221,6 +221,7 @@ export default function Game({ onBackToStart }) {
         winningCells={winningCells}
         lastMove={lastMove}
       />
+      <p className="created-by">Created by itay kendelker</p>
     </div>
   );
 }
